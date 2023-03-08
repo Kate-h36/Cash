@@ -24,18 +24,28 @@ For instance, if some customer is owed 41¢, the biggest first (i.e., best immed
 
 The program prompts the user to enter a cash amount and a set of coin denominations. For example:
 
-`$ ./cash
-Change owed: 41
-4`
+`$ ./cash`
+`Change owed: 41`
+`4`
 
 if the user doesn’t, in fact, input a positive integer  when prompted the program should re-prompt the user:
 
-`$ ./cash
-Change owed: -41
-Change owed: foo
-Change owed: 41
-4`
+`$ ./cash`
+`Change owed: -41`
+`Change owed: foo`
+`Change owed: 41`
+`4`
 
 The program also must output the minimum number of coins needed to make the change. 
-For exaple if you input `99` program should outputs `9` ( 'cause this is three quarters, two dimes, and four pennies)
+For exaple if you input `99` program should outputs `9` ('cause this is three quarters, two dimes, and four pennies)
 
+## Algorithm
+The algorithm works as follows:
+
+ * Sort the coin denominations in descending order.
+ *  While the cash amount is greater than 0, do the following:
+ 
+1. Take the largest coin denomination that is less than or equal to the cash amount.
+2. Subtract the coin denomination from the cash amount.
+3. Increment the count of the number of coins used.
+4. The algorithm is guaranteed to produce the optimal solution for US coin denominations, which are 1, 5, 10, and 25 cents.

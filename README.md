@@ -48,4 +48,4 @@ The algorithm works as follows:
 1. Take the largest coin denomination that is less than or equal to the cash amount.
 2. Subtract the coin denomination from the cash amount.
 3. Increment the count of the number of coins used.
-4. The algorithm is guaranteed to produce the optimal solution for US coin denominations, which are 1, 5, 10, and 25 cents.
+ The algorithm is guaranteed to produce the optimal solution for US coin denominations, which are 1, 5, 10, and 25 cents.

@@ -7,3 +7,35 @@ For instance, if some customer is owed 41¢, the biggest first (i.e., best immed
 
 ## Getting Started
 ### Prerequisites
+* C compiler ( C compiler(GCC, Clang, etc.) Note: Personally I recommend using Clang or Clangd compiler and it's extension for VS Code
+* CS50 Library installed on your machine(detailed installation information can be found here: https://cs50.readthedocs.io/libraries/cs50/c/)
+
+## installation 
+
+1. Clone the Repository:
+` git clone https://github.com/Kate-h36/Cash.git`
+2. Open a terminal window and navigate to the cloned directory.
+3. Compile and linking the program by running:
+`clang -o cash cash.c -lcs50`
+4. Run program by:
+`make cash` and `./cash`
+
+## Usage 
+
+The program prompts the user to enter a cash amount and a set of coin denominations. For example:
+
+`$ ./cash
+Change owed: 41
+4`
+
+if the user doesn’t, in fact, input a positive integer  when prompted the program should re-prompt the user:
+
+`$ ./cash
+Change owed: -41
+Change owed: foo
+Change owed: 41
+4`
+
+The program also must output the minimum number of coins needed to make the change. 
+For exaple if you input `99` program should outputs `9` ( 'cause this is three quarters, two dimes, and four pennies)
+

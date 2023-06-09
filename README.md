@@ -1,5 +1,9 @@
 # Cash Problem
 
+## Note 
+
+This was created as soiution for Problem Set #1 of CS50 Course Cash Problem (less comfortable version): https://cs50.harvard.edu/x/2023/psets/1/cash/
+
 ## Cash Problem using Greedy Algorithm in C
 
 This is a C program that solves the cash problem using the greedy algorithm. Given a cash amount and a set of coin denominations, the program determines the minimum number of coins needed to make the change.
